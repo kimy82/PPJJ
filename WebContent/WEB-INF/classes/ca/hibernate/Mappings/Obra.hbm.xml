@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 04/11/2009 17:51:20 by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping default-lazy="false"  >
+    <class name="ca.Entitys.Obra" table="OBRA" >
+        <id name="id" type="integer">
+            <column name="ID" precision="8" />
+            <generator class="increment"></generator>
+        </id>
+        <property name="TitolPag" type="string">
+            <column name="titolpag" />
+        </property>        
+        <property name="TitolMenu" type="string">
+            <column name="titolmenu" />
+        </property>     
+         <property name="TipusObra" type="string">
+            <column name="tipusObra" />
+        </property>   
+		<set name="images"   inverse="true" cascade="save-update" >
+            <key>
+                <column name="OBRA" length="50"  />
+            </key>
+            <one-to-many class="ca.Entitys.Images" />
+        </set>                  
+        <set name="noticies"   inverse="true" cascade="save-update" >
+            <key>
+                <column name="OBRA" length="50"  />
+            </key>
+            <one-to-many class="ca.Entitys.Noticia" />
+        </set>
+        <set name="pdf"   inverse="true" cascade="save-update" >
+            <key>
+                <column name="OBRA" length="50"  />
+            </key>
+            <one-to-many class="ca.Entitys.Pdf" />
+        </set>                  
+    </class>
+</hibernate-mapping>

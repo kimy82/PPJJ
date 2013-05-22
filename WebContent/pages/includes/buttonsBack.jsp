@@ -1,0 +1,1 @@
+<input type="button" onclick="window.location.href='/PPJJ/Welcome.do';" value="Tornar a la Web" >

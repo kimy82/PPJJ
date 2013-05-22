@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 04/11/2009 17:51:20 by Hibernate Tools 3.2.0.b9 -->
+<hibernate-mapping>
+    <class name="ca.Entitys.Pdf" table="PDF"  >
+        <id name="id" type="integer">
+	        <column name="ID" precision="8" />
+            <generator class="increment"></generator>
+        </id>
+        <property name="nomPDF" type="string">
+            <column name="nompdf" />
+        </property>   
+        <property name="nomCA" type="string">
+            <column name="nomca" />
+        </property> 
+        <property name="nomES" type="string">
+            <column name="nomes" />
+        </property> 
+        <property name="nomEN" type="string">
+            <column name="nomen" />
+        </property>         
+        <property name="data" type="string">
+            <column name="data" />
+        </property>  
+        <many-to-one name="obra" class="ca.Entitys.Obra" update="true" insert="true" fetch="select"  cascade="save-update"  lazy="false" >
+            <column name="OBRA" length="50" />
+        </many-to-one>       
+    </class>
+</hibernate-mapping>

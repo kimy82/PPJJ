@@ -1,0 +1,262 @@
+/*menu*/
+#menu{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	-webkit-box-shadow:1px 1px 3px #888;
+	-moz-box-shadow:1px 1px 3px #888;
+}
+#menu li{border-bottom:1px solid #FFF;}
+#menu ul li, #menu li:last-child{border:none}	
+a{
+	display:block;
+	color:#FFF;
+	text-decoration:none;
+	font-family:'Helvetica', Arial, sans-serif;
+	font-size:13px;
+	padding:3px 5px;
+	text-shadow:1px 1px 1px #325179;
+}
+#menu a:hover{
+	color:#F9B855;
+	-webkit-transition: color 0.2s linear;
+}
+#menu ul a{background-color:#6594D1;}
+#menu ul a:hover{
+	background-color:#FFF;
+	color:#2961A9;
+	text-shadow:none;
+	-webkit-transition: color, background-color 0.2s linear;
+}
+ul{
+	display:block;
+	background-color:#2961A9;
+	margin:0;
+	padding:0;
+	width:130px;
+	list-style:none;
+}
+#menu ul{background-color:#6594D1;}
+#menu li ul {display:none;}
+.premenu{
+	position: absolute;
+	margin-top: 7em;
+	margin-left: 20px;
+	z-index: 2;
+	}
+
+/*fotos principal*/
+
+.fotosprincipal {
+	 	width: 60%; 
+	margin-left: 300px;
+	position: absolute;
+	}
+/*general*/
+body{
+	background-color: black;
+	}
+/*presentacio*/
+  	/* Lightbox background */  
+    #lightbox {  
+     display:none;  
+    background:#C0CCC0;  
+    opacity:0.9;  
+    filter:alpha(opacity=90);  
+    position:absolute;  
+    top:0px;  
+    left:0px;  
+    min-width:100%;  
+    min-height:100%;  
+    z-index:1000;  
+   }  
+   /* Lightbox panel with some content */  
+   #lightbox-panel {  
+    display:none;  
+    position:fixed;  
+    top:100px;  
+    left:50%;  
+    margin-left:-200px;  
+    width:400px;  
+    background:#FFFFFF;  
+    padding:10px 15px 10px 15px;  
+    border:2px solid #CCCCCC;  
+    z-index:1001;  
+   }  
+   .flts{
+	width: 350px;
+	}
+	.rightcss{
+	float:right;
+	}
+	
+	/*contactar*/
+	  #lightbox2 {  
+     display:none;  
+    background:#C0CCC0;  
+    opacity:0.9;  
+    filter:alpha(opacity=90);  
+    position:absolute;  
+    top:0px;  
+    left:0px;  
+    min-width:100%;  
+    min-height:100%;  
+    z-index:1000;  
+   }    
+   #lightbox-panel2 {  
+    display:none;  
+    position:fixed;  
+    top:100px;  
+    left:50%;  
+    margin-left:-200px;  
+    margin-top: -70px;
+    width:600px;  
+    background:#FFFFFF;  
+    padding:10px 15px 10px 15px;  
+    border:2px solid #CCCCCC;  
+    z-index:1001;  
+   }  
+   .info {
+   font-size: 15px;
+   font-style:italic;
+   font-family:"Arial";
+   }
+   /*xelida*/
+   .carrosel{
+   position:relative;  
+    top:20px;  
+    left:25%;  
+   }
+   .botons{
+   	position: absolute;
+	margin-top: 13em;
+	margin-left: 20px;
+	z-index: 1;
+   }
+   /*noticies*/
+	  #lightbox3 {  
+     display:none;  
+    background:#C0CCC0;  
+    opacity:0.9;  
+    filter:alpha(opacity=90);  
+    position:absolute;  
+    top:0px;  
+    left:0px;  
+    min-width:100%;  
+    min-height:100%;  
+    z-index:1000;  
+   }    
+   #lightbox-panel3 {  
+    display:none;  
+    position:fixed;  
+    top:100px;  
+    left:40%;  
+    margin-left:-200px;  
+    width:800px;  
+    background:#FFFFFF;  
+    padding:10px 15px 10px 15px;  
+    border:2px solid #CCCCCC;  
+    z-index:1001;  
+   }  
+    /*planols*/
+	  #lightbox4 {  
+     display:none;  
+    background:#C0CCC0;  
+    opacity:0.9;  
+    filter:alpha(opacity=90);  
+    position:absolute;  
+    top:0px;  
+    left:0px;  
+    min-width:100%;  
+    min-height:100%;  
+    z-index:1000;  
+   }    
+   #lightbox-panel4 {  
+    display:none;  
+    position:fixed;  
+    top:100px;  
+    left:40%;  
+    margin-left:-200px;  
+    width:800px;  
+    background:#FFFFFF;  
+    padding:10px 15px 10px 15px;  
+    border:2px solid #CCCCCC;  
+    z-index:1001;  
+   }  
+   /*carousel giratori*/
+   img
+{
+	border: none;
+}
+#carousel
+{
+	width: 700px;
+	height: 150px;
+	position: absolute;
+	top: 100px;
+	left: 30%;
+	margin-left: -350px;
+}
+#carousel a
+{
+	position: absolute;
+	width: 110px;
+}
+
+#ImageBoxOverlay
+{
+	background-color: #000;
+	z-index: 1000;
+}
+#ImageBoxOuterContainer{
+	z-index: 1000;
+}
+#ImageBoxCaption
+{
+	background-color: #F4F4EC;
+}
+#ImageBoxContainer
+{
+	width: 250px;
+	height: 250px;
+	background-color: #F4F4EC;
+}
+#ImageBoxCaptionText
+{
+	font-weight: bold;
+	padding-bottom: 5px;
+	font-size: 13px;
+	color: #000;
+}
+#ImageBoxCaptionImages
+{
+	margin: 0;
+	height: 20px;
+}
+#ImageBoxNextImage
+{
+	background-image: url(http://interface.eyecon.ro/demos/images/imagebox/spacer.gif);
+	background-color: transparent;
+}
+#ImageBoxPrevImage
+{
+	background-image: url(http://interface.eyecon.ro/demos/images/imagebox/spacer.gif);
+	background-color: transparent;
+}
+#ImageBoxNextImage:hover
+{
+	background-image: url(http://interface.eyecon.ro/demos/images/imagebox/next_image.jpg);
+	background-repeat:	no-repeat;
+	background-position: right top;
+}
+#ImageBoxPrevImage:hover
+{
+	background-image: url(http://interface.eyecon.ro/demos/images/imagebox/prev_image.jpg);
+	background-repeat:	no-repeat;
+	background-position: left bottom;
+}
+.letra{
+font-family: verdana arial helvetica "sans serif";
+font-size: 50px;
+color: white;
+}
