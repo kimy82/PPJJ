@@ -23,10 +23,32 @@
 <web-app>
 	<display-name>Jordi Arquitecte</display-name>
 
-		<listener>
-		    <listener-class>ca.Listeners.HibernateListener</listener-class>
-		</listener>
-
+	<!-- filtre per visites -->
+	<filter>
+		<filter-name>BeginFilter</filter-name>
+		<display-name>BeginFilter</display-name>
+		<description>BeginFilter</description>
+		<filter-class>ca.filtres.BeginFilter</filter-class>
+	</filter>
+		<!-- filtre per controlar acces a la zona privada -->
+	<filter>
+		<filter-name>AccesFilter</filter-name>
+		<display-name>AccesFilter</display-name>
+		<description>AccesFilter</description>
+		<filter-class>ca.filtres.AccesFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>BeginFilter</filter-name>
+		<url-pattern>/index.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>AccesFilter</filter-name>
+		<url-pattern>/backend/*</url-pattern>
+	</filter-mapping>
+	<listener>
+		    <listener-class>ca.listeners.HibernateListener</listener-class>
+	</listener>
+	
 	<!-- Standard Action Servlet Configuration -->
 	<servlet>
 		<servlet-name>action</servlet-name>
@@ -53,32 +75,6 @@
 		<servlet-name>action</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
-
-	<!-- filtre per visites -->
-	<filter>
-		<filter-name>BeginFilter</filter-name>
-		<display-name>BeginFilter</display-name>
-		<description>BeginFilter</description>
-		<filter-class>ca.filtres.BeginFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>BeginFilter</filter-name>
-		<url-pattern>/index.jsp</url-pattern>
-	</filter-mapping>
-	
-	<!-- filtre per controlar acces a la zona privada -->
-	<filter>
-		<filter-name>AccesFilter</filter-name>
-		<display-name>AccesFilter</display-name>
-		<description>AccesFilter</description>
-		<filter-class>ca.filtres.AccesFilter</filter-class>
-	</filter>
-	<filter-mapping>
-		<filter-name>AccesFilter</filter-name>
-		<url-pattern>/backend/*</url-pattern>
-	</filter-mapping>
-	
-	
 	<!-- The Usual Welcome File List -->
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
