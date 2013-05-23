@@ -3,9 +3,6 @@
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/jquerycarrosel.js" type="text/javascript"></script>
 
-	
-
-		<script type="text/javascript" src="js/fx.js"></script>
 		<script type="text/javascript" src="js/iutil.js"></script>
 		<script type="text/javascript" src="js/idrag.js"></script>
 		<script type="text/javascript" src="js/accordion.js"></script>
