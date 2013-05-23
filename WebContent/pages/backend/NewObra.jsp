@@ -103,7 +103,7 @@ var table = document.getElementById("urlnoticies");
 var tBody = table.getElementsByTagName('tbody')[0];
 var newTR = document.createElement('tr');
 var newTD = document.createElement('td');
-newTD.innerHTML = 'URL de la noticia:<html:text name="SaveObraNewForm"  property="urlnoticia"  value="" /><br>Nom Catala:<html:text property="SaveObraNewForm" property="textca" value=""></html:text><br>Nom Castella:<html:text property="SaveObraNewForm" property="textes" value=""></html:text><br>Nom Angles:<html:text property="SaveObraNewForm" property="texten" value=""></html:text>';
+newTD.innerHTML = 'URL de la noticia:<html:text name="SaveObraNewForm"  property="urlnoticia"  value="" /><br>Nom Catala:<html:text name="SaveObraNewForm" property="textca" value=""></html:text><br>Nom Castella:<html:text name="SaveObraNewForm" property="textes" value=""></html:text><br>Nom Angles:<html:text name="SaveObraNewForm" property="texten" value=""></html:text>';
 newTR.appendChild (newTD);
 tBody.appendChild(newTR);
 }
