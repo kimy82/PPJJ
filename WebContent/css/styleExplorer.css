@@ -54,7 +54,11 @@ ul{
 	}
 /*general*/
 body{
-	background-color: black;
+	background-image: url("/PPJJ/images/fons.jpg"); 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 	}
 /*presentacio*/
   	/* Lightbox background */  
@@ -245,18 +249,24 @@ body{
 }
 #ImageBoxNextImage:hover
 {
-	background-image: url(http://interface.eyecon.ro/demos/images/imagebox/next_image.jpg);
+	background-image: url(/PPJJ/images/btn_next.gif);
 	background-repeat:	no-repeat;
 	background-position: right top;
 }
 #ImageBoxPrevImage:hover
 {
-	background-image: url(http://interface.eyecon.ro/demos/images/imagebox/prev_image.jpg);
+	background-image: url(/PPJJ/images/btn_prev.gif);
 	background-repeat:	no-repeat;
 	background-position: left bottom;
 }
 .letra{
-font-family: verdana arial helvetica "sans serif";
-font-size: 50px;
-color: white;
+	font-family:  'Hoefler Text', Georgia, 'Times New Roman', serif;
+	font-weight: normal;
+    font-size: 4em;
+	letter-spacing: .2em;
+	line-height: 1.1em;
+	margin:0px;
+	text-align: left;
+	color:grey;
+	text-shadow: 8px 4px 8px #4d4d4d;
 }
