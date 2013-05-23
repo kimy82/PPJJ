@@ -63,6 +63,7 @@ public class SaveNewObraAction extends Action
 			obra.setTipusObra(saveObraForm.getObraRef());
 			obra.setTitolMenu(saveObraForm.getTitolMenu());
 			obra.setTitolPag(saveObraForm.getTitolPag());
+			if(idmax==null)idmax=0;
 			obra.setId(Integer.parseInt(idmax.toString())+1);
 
 			//imatges
@@ -84,6 +85,7 @@ public class SaveNewObraAction extends Action
 			for(i=0;i<urlsnot.length;i++){
 				
 			String url = urlsnot[i].toString();
+			if(url==null || url.equals("")) continue;
 			Noticia noti = new Noticia();
 			noti.setNoticiaUrl(url);
 			noti.setObra(obra);
@@ -95,7 +97,7 @@ public class SaveNewObraAction extends Action
 			obra.setNoticies(noticies);
 			
 			//pdf's
-			if(planos.length != 0){
+			if(planos!=null && planos.length != 0){
 				int jj =0;
 				for(jj=0 ; jj<planos.length; jj++){
 					Pdf filePDF = new Pdf();
