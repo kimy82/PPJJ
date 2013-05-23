@@ -12,9 +12,9 @@ import ca.utils.HibernateUtil;
 
 public class ObraBO {
 
-	SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+	
 
-	Session session = sessionFactory.getCurrentSession();
+	Session session = HibernateUtil.getSession();
 
 	/** Default constructor. */
 	public ObraBO() {

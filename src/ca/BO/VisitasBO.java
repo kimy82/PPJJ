@@ -14,7 +14,7 @@ public class VisitasBO {
 
 	SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 
-	Session session = sessionFactory.getCurrentSession();
+	Session session = sessionFactory.openSession();
 
 	/** Default constructor. */
 	public VisitasBO() {

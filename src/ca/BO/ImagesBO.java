@@ -15,9 +15,7 @@ import ca.utils.HibernateUtil;
 
 public class ImagesBO {
 
-	SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-
-	Session session = sessionFactory.getCurrentSession();
+	Session session = HibernateUtil.getSession();
 
 	/** Default constructor. */
 	public ImagesBO() {
