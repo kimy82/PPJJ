@@ -12,6 +12,42 @@
     $(function(){
         $("div.foo").carousel({direction: "vertical"});
     });
+    $(document).ready(function() {
+		$("a#show-panel").click(function() {
+			$("#lightbox, #lightbox-panel").fadeIn(300);
+		})
+		$("a#close-panel").click(function() {
+			$("#lightbox, #lightbox-panel").fadeOut(300);
+		})
+	})
+
+	$(document).ready(function() {
+		$("a#show-panel2").click(function() {
+			$("#lightbox2, #lightbox-panel2").fadeIn(300);
+			//load20();
+		})
+		$("a#close-panel2").click(function() {
+			$("#lightbox2, #lightbox-panel2").fadeOut(300);
+		})
+	})
+	$(document).ready(function() {
+		$("a#show-panel3").click(function() {
+			$("#lightbox3, #lightbox-panel3").fadeIn(300);
+			//load20();
+		})
+		$("a#close-panel3").click(function() {
+			$("#lightbox3, #lightbox-panel3").fadeOut(300);
+		})
+	})
+	$(document).ready(function() {
+		$("a#show-panel4").click(function() {
+			$("#lightbox4, #lightbox-panel4").fadeIn(300);
+			
+		})
+		$("a#close-panel4").click(function() {
+			$("#lightbox4, #lightbox-panel4").fadeOut(300);
+		})
+	})
 </script>
 </head>
 <html>

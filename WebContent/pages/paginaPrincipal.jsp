@@ -47,7 +47,7 @@
 			);
 			$.ImageBox.init(
 				{
-					loaderSRC: 'http://interface.eyecon.ro/demos/images/imagebox/loading.gif',
+					loaderSRC: '/PPJJ/images/large-loading.gif',
 					closeHTML: '<img src="images/cerrar_circular.jpg">'
 				}
 			);
