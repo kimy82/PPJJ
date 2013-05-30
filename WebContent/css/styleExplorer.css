@@ -194,10 +194,10 @@ body{
 }
 #carousel
 {
-	width: 700px;
-	height: 150px;
+	width: 730px;
+	height: 180px;
 	position: absolute;
-	top: 100px;
+	top: 90px;
 	left: 30%;
 	margin-left: -350px;
 }
@@ -269,4 +269,10 @@ body{
 	text-align: left;
 	color:grey;
 	text-shadow: 8px 4px 8px #4d4d4d;
+}
+img{
+	border:1px solid white;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 }

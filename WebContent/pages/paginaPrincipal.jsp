@@ -37,11 +37,11 @@
 		{
 			$('#carousel').Carousel(
 				{
-					itemWidth: 110,
-					itemHeight: 62,
+					itemWidth: 140,
+					itemHeight: 72,
 					itemMinWidth: 50,
 					items: 'a',
-					reflections: .5,
+					reflections: .0,
 					rotationSpeed: 1.8
 				}
 			);
